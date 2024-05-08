@@ -20,10 +20,17 @@ test001_seVerificaQueLasAvesTienePesoVelocidadYEdad
 
 !classDefinition: #HotelDeAvesTest category: #HotelDeAves!
 ClassTest subclass: #HotelDeAvesTest
-	instanceVariableNames: 'edad velocidad pesoEnGramos'
+	instanceVariableNames: 'edad velocidad pesoEnGramos pepita falco vultur'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'HotelDeAves'!
+
+!HotelDeAvesTest methodsFor: 'as yet unclassified' stamp: 'hola 5/8/2024 11:19:50'!
+setUp
+	
+	pepita := Golondrina conEdad: 15 conVelocidad: (35 * kilometer) conPeso: (25 * gram).
+	falco := Halcon conEdad: 5 conVelocidad: (100 * kilometer) conPeso: (1000 * gram).
+	vultur := Condor conEdad: 7 conVelocidad: (55 * kilometer) conPeso: (15000 * gram).! !
 
 
 !classDefinition: #Ave category: #HotelDeAves!
